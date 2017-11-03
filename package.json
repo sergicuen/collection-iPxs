@@ -1,0 +1,18 @@
+{
+  "name": "iPxs",
+  "version": "0.1.0",
+  "description": "Icestudio PiXel Stream collection",
+  "keywords": "Pixel, VGA, Visualization, Image Processing",
+  "license": "GPL-2.0",
+  "authors": [{
+    "name": "Sergio Cuenca",
+    "email": "sergio@dtic.ua.es",
+    "url": "https://github.com/sergicuen"
+  }],
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "branch": "master",
+    "url": ""
+  }
+}
