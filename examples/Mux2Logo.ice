@@ -424,15 +424,31 @@
               "y": 48
             }
           ]
+        },
+        {
+          "source": {
+            "block": "0a17b4a7-1735-49a8-8c77-b68e56dba139",
+            "port": "6e4ac81b-0abc-4441-a529-d2cb74e0a28c"
+          },
+          "target": {
+            "block": "e6c489c6-d857-4e1e-a62a-3c8421ba4212",
+            "port": "69d500d0-9824-46b8-ae9c-cc19f55eefcb"
+          },
+          "vertices": [
+            {
+              "x": 576,
+              "y": 16
+            }
+          ]
         }
       ]
     },
     "state": {
       "pan": {
-        "x": -87.7655,
-        "y": 132.706
+        "x": -93.825,
+        "y": 139.8316
       },
-      "zoom": 0.5507
+      "zoom": 0.5576
     }
   },
   "dependencies": {
