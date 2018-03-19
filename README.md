@@ -13,7 +13,7 @@ Icestudio PiXel Stream collection.
 
 ## Tutorial (spanish)
 
-https://github.com/sergicuen/collection-iPxs/wiki/Home.md
+https://github.com/sergicuen/collection-iPxs/tree/master/wiki/Home.md
 
 ## Blocks
 * *Flow*
