@@ -11,6 +11,10 @@ Icestudio PiXel Stream collection.
 * Install the collection: *Tools > Collections > Add*
 * Load the collection: *Select > Collection*
 
+## Tutorial (spanish)
+
+https://github.com/sergicuen/collection-iPxs/wiki/
+
 ## Blocks
 * *Flow*
   * PxsMux2
