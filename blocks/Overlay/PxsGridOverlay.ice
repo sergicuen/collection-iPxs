@@ -326,7 +326,7 @@
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsGridOverlay.v\r\n\r\n\r\n//-- Instantiate PxsGridOverlay module.\r\nPxsGridOverlay \r\nPxsGridOverlay1(\r\n    px_clk,\r\n    RGBStr_i,\r\n    RGBStr_o\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsGridOverlay.v\r\n\r\n\r\n//-- Instantiate PxsGridOverlay module.\r\nPxsGridOverlay \r\nPxsGridOverlay1(\r\n    px_clk,\r\n    RGBStr_i,\r\n    RGBStr_o\r\n    );\r\n",
             "params": [],
             "ports": {
               "in": [

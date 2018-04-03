@@ -40,7 +40,7 @@ begin
 		RGBStr_o[`YC] <= VGAStr_i[`YC];
 		RGBStr_o[`Active] <= VGAStr_i[`Active];
 		if (VGAStr_i[`Active])
-			RGBStr_o[`RGB] <= Xc[5:3];  //VGAStr_i[`XC][5:3];
+			RGBStr_o[`RGB] <= Xc[7:5];  //VGAStr_i[`XC][5:3];
 		else
 			RGBStr_o[`RGB] <= Black;
 end

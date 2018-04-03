@@ -14,14 +14,10 @@
 //
 // Additional Comments: 
 //
-//	Video Stream notation 
-//	- VGA: type of video 640x480 progresive
-//  - S: Sync signals HSync, VSync
-//	- C: Coordinates XCoord, YCoord	
-//	- A: ActiveVideo 
-//	- P: Pixel type RGB(1:1:1)/ Gray(3b)	
-
-//////////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+//-- GPL license
+//-----------------------------------------------------------------------------
+`include "Pxs.vh"
 module PxsSplit2 (
             input wire       px_clk,           	// pixel clock
 			input wire [25:0] RGBStr_i,			// Input stream
@@ -29,14 +25,6 @@ module PxsSplit2 (
 			output reg [25:0] RGBStr2_o			// Output stream 2
          );
 		 
-// alias 
-`define Active 0:0
-`define VS 1:1
-`define HS 2:2
-`define YC 12:3
-`define XC 22:13
-`define RGB 25:23
-
 always @(posedge px_clk)
 begin
 	RGBStr1_o <= RGBStr_i;

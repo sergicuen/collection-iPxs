@@ -405,7 +405,7 @@
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsStrComp.v\r\n\r\n\r\n//-- Instantiate PxsStrComp module.\r\nPxsStrComp \r\nPxsStrComp1(\r\n\t\t\tVGA_RGB_Str_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n            HSync,         // Horizontal sync out\r\n            VSync,         // Vertical sync out\r\n            Red,   // RED vga outputapio --board icezum\r\n            Green, // GREEN vga output\r\n            Blue,  // BLUE vga output\r\n            XCoord,          // ScanX postion\r\n            YCoord,          // ScanY position \r\n            ActiveVideo\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsStrComp.v\r\n\r\n\r\n//-- Instantiate PxsStrComp module.\r\nPxsStrComp \r\nPxsStrComp1(\r\n\t\t\tVGA_RGB_Str_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n            HSync,         // Horizontal sync out\r\n            VSync,         // Vertical sync out\r\n            Red,   // RED vga outputapio --board icezum\r\n            Green, // GREEN vga output\r\n            Blue,  // BLUE vga output\r\n            XCoord,          // ScanX postion\r\n            YCoord,          // ScanY position \r\n            ActiveVideo\r\n    );\r\n",
             "params": [],
             "ports": {
               "in": [
@@ -555,10 +555,10 @@
     },
     "state": {
       "pan": {
-        "x": -1130.375,
-        "y": 343.125
+        "x": -1186.325,
+        "y": 354.375
       },
-      "zoom": 0.7578
+      "zoom": 0.7859
     }
   },
   "dependencies": {}
