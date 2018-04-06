@@ -25,10 +25,6 @@ module PxsBouncingBall #(
                 input wire [25:0] RGBStr_i,       // VGA stream
                 output reg [25:0] RGBStr_o       // 
                );
-
-  
-	// ball dimension.
-    parameter SIZE_BALL = 16;
     
     // Border definition.
     parameter border = 0;
