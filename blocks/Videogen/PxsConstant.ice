@@ -1,9 +1,9 @@
 {
   "version": "1.1",
   "package": {
-    "name": "PxsRGB",
+    "name": "PxsConstant",
     "version": "1.0",
-    "description": "generate a stream of constant RGB color",
+    "description": "Generate a stream of constant RGB color.",
     "author": "Sergio Cuenca",
     "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22210mm%22%20height=%22297mm%22%20viewBox=%220%200%20210%20297%22%3E%3Cg%20font-weight=%22400%22%20font-family=%22sans-serif%22%20letter-spacing=%220%22%20word-spacing=%220%22%3E%3Ctext%20style=%22line-height:1.25%22%20x=%2217.886%22%20y=%22129.252%22%20transform=%22scale(1.08086%20.92519)%22%20font-size=%2282.959%22%20fill=%22green%22%20stroke-width=%222.074%22%3E%3Ctspan%20x=%2217.886%22%20y=%22129.252%22%20fill=%22red%22%3ER%3C/tspan%3E%3C/text%3E%3Ctext%20style=%22line-height:1.25%22%20x=%2289.093%22%20y=%22116.229%22%20transform=%22scale(.81788%201.22267)%22%20font-size=%22107.755%22%20fill=%22#0f0%22%20stroke-width=%222.694%22%3E%3Ctspan%20x=%2289.093%22%20y=%22116.229%22%3EG%3C/tspan%3E%3C/text%3E%3Ctext%20style=%22line-height:1.25%22%20x=%22137.376%22%20y=%22116.873%22%20transform=%22matrix(.96475%20.00849%20-.0079%201.03647%200%200)%22%20font-size=%2278.405%22%20fill=%22#00f%22%20stroke-width=%221.96%22%3E%3Ctspan%20x=%22137.376%22%20y=%22116.873%22%3EB%3C/tspan%3E%3C/text%3E%3C/g%3E%3C/svg%3E"
   },
@@ -27,15 +27,15 @@
             "clock": false
           },
           "position": {
-            "x": 1552,
-            "y": -216
+            "x": 1600,
+            "y": -256
           }
         },
         {
           "id": "10563024-bd0a-4a4d-856c-4bb1dff3f104",
           "type": "basic.output",
           "data": {
-            "name": "RGBStr",
+            "name": "RGBStr_o",
             "range": "[25:0]",
             "pins": [
               {
@@ -172,15 +172,15 @@
             "virtual": true
           },
           "position": {
-            "x": 2504,
-            "y": -112
+            "x": 2432,
+            "y": -192
           }
         },
         {
           "id": "03ffa583-169d-4213-a75b-dd41755aa32a",
           "type": "basic.input",
           "data": {
-            "name": "VGAStr",
+            "name": "VGAStr_i",
             "range": "[22:0]",
             "pins": [
               {
@@ -303,31 +303,31 @@
             "clock": false
           },
           "position": {
-            "x": 1544,
-            "y": -88
+            "x": 1600,
+            "y": -120
           }
         },
         {
           "id": "4ef4f2b1-023d-4569-8e10-643ef6cc71cb",
           "type": "basic.constant",
           "data": {
-            "name": "COLORext",
+            "name": "color",
             "value": "3'b111",
             "local": false
           },
           "position": {
-            "x": 2032,
-            "y": -416
+            "x": 2040,
+            "y": -408
           }
         },
         {
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include Pxs.vh\r\n// @include PxsConstant.v\r\n\r\n\r\n//-- Instantiate PxsConstant module.\r\nPxsConstant #(COLORext)\r\nPxsConstant1(\r\n    px_clk,\r\n    VGAStr_i,\r\n    RGBStr_o\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsConstant.v\r\n\r\n\r\n//-- Instantiate PxsConstant module.\r\nPxsConstant #(color)\r\nPxsConstant1(\r\n    px_clk,\r\n    VGAStr_i,\r\n    RGBStr_o\r\n    );\r\n",
             "params": [
               {
-                "name": "COLORext"
+                "name": "color"
               }
             ],
             "ports": {
@@ -356,7 +356,7 @@
           },
           "size": {
             "width": 448,
-            "height": 432
+            "height": 272
           }
         }
       ],
@@ -370,23 +370,6 @@
             "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
             "port": "px_clk"
           }
-        },
-        {
-          "source": {
-            "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
-            "port": "RGBStr_o"
-          },
-          "target": {
-            "block": "10563024-bd0a-4a4d-856c-4bb1dff3f104",
-            "port": "in"
-          },
-          "vertices": [
-            {
-              "x": 2416,
-              "y": -80
-            }
-          ],
-          "size": 26
         },
         {
           "source": {
@@ -406,17 +389,28 @@
           },
           "target": {
             "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
-            "port": "COLORext"
+            "port": "color"
           }
+        },
+        {
+          "source": {
+            "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
+            "port": "RGBStr_o"
+          },
+          "target": {
+            "block": "10563024-bd0a-4a4d-856c-4bb1dff3f104",
+            "port": "in"
+          },
+          "size": 26
         }
       ]
     },
     "state": {
       "pan": {
-        "x": -1191.1061,
-        "y": 403.1288
+        "x": -1405.3793,
+        "y": 411.0862
       },
-      "zoom": 0.7973
+      "zoom": 0.9009
     }
   },
   "dependencies": {}
