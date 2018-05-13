@@ -463,18 +463,34 @@
             "local": false
           },
           "position": {
-            "x": 2040,
-            "y": -448
+            "x": 1928,
+            "y": -432
+          }
+        },
+        {
+          "id": "f1789265-4384-423f-ba42-7a0c9b195061",
+          "type": "basic.constant",
+          "data": {
+            "name": "color",
+            "value": "3'b111",
+            "local": false
+          },
+          "position": {
+            "x": 2152,
+            "y": -432
           }
         },
         {
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include Pxs.vh\r\n// @include PxsBall.v\r\n\r\n\r\n//-- Instantiate PxsBall module.\r\nPxsBall #(.SIZE_BALL(SIZE_BALL))\r\nPxsBall1(\r\n    px_clk,\r\n    RGBStr_i,\r\n    pos_x,\r\n    pos_y,\r\n    RGBStr_o\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsBall.v\r\n\r\n\r\n//-- Instantiate PxsBall module.\r\nPxsBall\r\n#(\r\n.SIZE_BALL(SIZE_BALL),\r\n.color(color)\r\n)\r\nPxsBall1\r\n(\r\n    px_clk,\r\n    RGBStr_i,\r\n    pos_x,\r\n    pos_y,\r\n    RGBStr_o\r\n);\r\n",
             "params": [
               {
                 "name": "SIZE_BALL"
+              },
+              {
+                "name": "color"
               }
             ],
             "ports": {
@@ -581,15 +597,25 @@
             "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
             "port": "SIZE_BALL"
           }
+        },
+        {
+          "source": {
+            "block": "f1789265-4384-423f-ba42-7a0c9b195061",
+            "port": "constant-out"
+          },
+          "target": {
+            "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
+            "port": "color"
+          }
         }
       ]
     },
     "state": {
       "pan": {
-        "x": -1206.9313,
-        "y": 420.0496
+        "x": -1198.0458,
+        "y": 406.9427
       },
-      "zoom": 0.8034
+      "zoom": 0.7977
     }
   },
   "dependencies": {}
