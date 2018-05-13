@@ -27,15 +27,15 @@
             "clock": false
           },
           "position": {
-            "x": 376,
-            "y": -120
+            "x": 352,
+            "y": -152
           }
         },
         {
           "id": "26bc0fc1-b0e9-4536-a965-513e91e18ed9",
           "type": "basic.output",
           "data": {
-            "name": "RGBStr",
+            "name": "RGBStr_o",
             "range": "[25:0]",
             "pins": [
               {
@@ -172,15 +172,15 @@
             "virtual": true
           },
           "position": {
-            "x": 1448,
-            "y": -24
+            "x": 1432,
+            "y": -88
           }
         },
         {
           "id": "088561f6-f085-4bbd-b6e0-a355517996c5",
           "type": "basic.input",
           "data": {
-            "name": "VGAStr",
+            "name": "VGAStr_i",
             "range": "[22:0]",
             "pins": [
               {
@@ -303,15 +303,15 @@
             "clock": false
           },
           "position": {
-            "x": 312,
-            "y": 80
+            "x": 352,
+            "y": -16
           }
         },
         {
           "id": "f8a4d92e-2664-4d78-bc27-614710107b80",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsXorPattern.v\r\n\r\n\r\n//-- Instantiate PxsXorPattern module.\r\nPxsXorPattern \r\nPxsXorPattern1(\r\n    px_clk,           // pixel clock\r\n    VGA_Str_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo\r\n    VGA_RGB_Str_o\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n    );\r\n\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsXorPattern.v\r\n\r\n//-- Instantiate PxsXorPattern module.\r\nPxsXorPattern \r\nPxsXorPattern1\r\n(\r\n    px_clk,     // Pixel clock\r\n    VGAStr_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo\r\n    RGBStr_o\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n);\r\n",
             "params": [],
             "ports": {
               "in": [
@@ -319,14 +319,14 @@
                   "name": "px_clk"
                 },
                 {
-                  "name": "VGA_Str_i",
+                  "name": "VGAStr_i",
                   "range": "[22:0]",
                   "size": 23
                 }
               ],
               "out": [
                 {
-                  "name": "VGA_RGB_Str_o",
+                  "name": "RGBStr_o",
                   "range": "[25:0]",
                   "size": 26
                 }
@@ -339,7 +339,7 @@
           },
           "size": {
             "width": 720,
-            "height": 400
+            "height": 272
           }
         }
       ],
@@ -361,14 +361,14 @@
           },
           "target": {
             "block": "f8a4d92e-2664-4d78-bc27-614710107b80",
-            "port": "VGA_Str_i"
+            "port": "VGAStr_i"
           },
           "size": 23
         },
         {
           "source": {
             "block": "f8a4d92e-2664-4d78-bc27-614710107b80",
-            "port": "VGA_RGB_Str_o"
+            "port": "RGBStr_o"
           },
           "target": {
             "block": "26bc0fc1-b0e9-4536-a965-513e91e18ed9",
