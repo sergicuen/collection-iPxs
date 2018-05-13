@@ -3,7 +3,7 @@
   "package": {
     "name": "PxsStrVGAJoin",
     "version": "1.0",
-    "description": "Join the components of a VGA stream",
+    "description": "Join the components of a VGA stream.",
     "author": "Sergio Cuenca",
     "image": ""
   },
@@ -28,7 +28,7 @@
           },
           "position": {
             "x": 1520,
-            "y": -328
+            "y": -288
           }
         },
         {
@@ -48,7 +48,7 @@
           },
           "position": {
             "x": 1520,
-            "y": -248
+            "y": -184
           }
         },
         {
@@ -75,7 +75,7 @@
           "id": "ff0be578-6fd7-4fac-80b2-2d09cb3b6430",
           "type": "basic.output",
           "data": {
-            "name": "VGAStr",
+            "name": "VGAStr_o",
             "range": "[22:0]",
             "pins": [
               {
@@ -197,7 +197,7 @@
             "virtual": true
           },
           "position": {
-            "x": 2528,
+            "x": 2512,
             "y": -88
           }
         },
@@ -264,7 +264,7 @@
           },
           "position": {
             "x": 1520,
-            "y": 16
+            "y": 8
           }
         },
         {
@@ -329,7 +329,7 @@
             "clock": false
           },
           "position": {
-            "x": 1512,
+            "x": 1520,
             "y": 112
           }
         },
@@ -337,7 +337,7 @@
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include Pxs.vh\r\n// @include PxsStrVGAJoin.v\r\n\r\n\r\n//-- Instantiate PxsStrVGAJoin module.\r\nPxsStrVGAJoin \r\nPxsStrVGAJoin1(\r\n\tHSync,         // Horizontal sync out\r\n    VSync,         // Vertical sync out\r\n    XCoord,          // ScanX postion\r\n    YCoord,          // ScanY position \r\n    ActiveVideo,\r\n\tVGAStr\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsStrVGAJoin.v\r\n\r\n\r\n//-- Instantiate PxsStrVGAJoin module.\r\nPxsStrVGAJoin \r\nPxsStrVGAJoin1\r\n(\r\n\tHSync,         // Horizontal sync out\r\n    VSync,         // Vertical sync out\r\n    XCoord,        // ScanX postion\r\n    YCoord,        // ScanY position \r\n    ActiveVideo,   // ActiveVideo\r\n\tVGAStr_o\t   // Stream VGA output\r\n);\r\n",
             "params": [],
             "ports": {
               "in": [
@@ -363,7 +363,7 @@
               ],
               "out": [
                 {
-                  "name": "VGAStr",
+                  "name": "VGAStr_o",
                   "range": "[22:0]",
                   "size": 23
                 }
@@ -371,11 +371,11 @@
             }
           },
           "position": {
-            "x": 1928,
+            "x": 1784,
             "y": -304
           },
           "size": {
-            "width": 448,
+            "width": 576,
             "height": 496
           }
         }
@@ -436,7 +436,7 @@
         {
           "source": {
             "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
-            "port": "VGAStr"
+            "port": "VGAStr_o"
           },
           "target": {
             "block": "ff0be578-6fd7-4fac-80b2-2d09cb3b6430",
@@ -448,10 +448,10 @@
     },
     "state": {
       "pan": {
-        "x": -1104.8777,
-        "y": 342.9892
+        "x": -1127.9412,
+        "y": 325.5294
       },
-      "zoom": 0.7572
+      "zoom": 0.7684
     }
   },
   "dependencies": {}

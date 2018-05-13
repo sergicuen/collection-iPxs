@@ -2,8 +2,8 @@
 // Company: Ridotech
 // Engineer: Juan Manuel Rico
 // 
-// Create Date:    09:34:23 30/09/2017 
-// Module Name:    vga_controller
+// Create Date:    25/03/2018
+// Module Name:    VGASyncGen
 // Description:    Basic control for 640x480@72Hz VGA signal.
 //
 // Dependencies: 
@@ -12,23 +12,28 @@
 // Revision 0.01 - File Created for Roland Coeurjoly (RCoeurjoly) in 640x480@85Hz.
 // Revision 0.02 - Change for 640x480@60Hz.
 // Revision 0.03 - Solved some mistakes.
-// Revision 0.04 - Change for 640x480@72Hz and output signals 'activevideo'
-//                 and 'px_clk'.
+// Revision 0.04 - Change for 640x480@72Hz and output signals 'activevideo' and 'px_clk'.
+// Revision 0.05 - Eliminate 'color_px' and 'red_monitor', green_monitor', 'blue_monitor' (Sergio Cuenca).
+// Revision 0.06 - Create 'FDivider' parameter for PLL.
 //
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module VgaSyncGen (
-            input wire       clk,           // Input clock: 12MHz
+module VGASyncGen #(
+            parameter FDivider = 62         // Feedback divider for 16Mhz (default) 83 for 12Mhz.
+)
+(
+            input wire       clk,           // Input clock (12Mhz or 16Mhz)
             output wire      hsync,         // Horizontal sync out
             output wire      vsync,         // Vertical sync out
             output reg [9:0] x_px,          // X position for actual pixel.
             output reg [9:0] y_px,          // Y position for actual pixel.
-            output wire      activevideo,
-            output wire      px_clk
+            output wire      activevideo,   // Video is actived.
+//            output wire      endframe,      // End for actual frame.
+            output wire      px_clk         // Pixel clock.
          );
 
-    // Generated values for pixel clock of 31.5Mhz and 72Hz frame frecuency.
+    // Generated values for pixel clock of 31.5Mhz and 72Hz frame frecuency (12Mhz - iceZum Alhambra).
     // # icepll -i12 -o31.5
     //
     // F_PLLIN:    12.000 MHz (given)
@@ -45,10 +50,29 @@ module VgaSyncGen (
     //
     // FILTER_RANGE: 1 (3'b001)
     //
+
+    // Generated values for pixel clock of 31.5Mhz and 72Hz frame frecuency (16Mhz - TinyFPGA-B2).
+    // # icepll -i16 -o31.5
+    //
+    // F_PLLIN:    16.000 MHz (given)
+    // F_PLLOUT:   31.500 MHz (requested)
+    // F_PLLOUT:   31.500 MHz (achieved)
+    //
+    // FEEDBACK: SIMPLE
+    // F_PFD:   16.000 MHz
+    // F_VCO: 1008.000 MHz
+    //
+    // DIVR:  0 (4'b0000)
+    // DIVF: 62 (7'b0111110)
+    // DIVQ:  5 (3'b101)
+    //
+    // FILTER_RANGE: 1 (3'b001)
+    //
+
     SB_PLL40_CORE #(.FEEDBACK_PATH("SIMPLE"),
                     .PLLOUT_SELECT("GENCLK"),
                     .DIVR(4'b0000),
-                    .DIVF(7'b1010011),
+                    .DIVF(FDivider),
                     .DIVQ(3'b101),
                     .FILTER_RANGE(3'b001)
             )
@@ -75,6 +99,24 @@ module VgaSyncGen (
     */
 
     // Video structure constants.
+    //
+    //   Horizontal Dots          640 (activeHvideo)
+    //   Horiz. Sync Polarity     NEG
+    //   A (hpixels)              Scanline time
+    //   B (hpulse)               Sync pulse lenght
+    //   C (hbp)                  Back porch
+    //   D (activeHvideo)         Active video time
+    //   E (hfp)                  Front porch
+    //              ______________________            ______________
+    //   __________|        VIDEO         |__________| VIDEO (next line)
+    //   |-E-| |-C-|----------D-----------|-E-|
+    //   ____   ______________________________   ___________________
+    //       |_|                              |_|
+    //       |B|
+    //       |---------------A----------------|
+    //   
+    // (Same structure for vertical signals).
+    //
     parameter activeHvideo = 640;               // Width of visible pixels.
     parameter activeVvideo =  480;              // Height of visible lines.
     parameter hfp = 24;                         // Horizontal front porch length.
@@ -115,19 +157,20 @@ module VgaSyncGen (
         begin
             hc <= 0;
             if (vc < vlines - 1)
-            vc <= vc + 1;
-        else
-           vc <= 0;
+               vc <= vc + 1;
+            else
+               vc <= 0;
         end
      end
 
-    // Generate sync pulses (active low) and active video.
-    assign hsync = (hc >= hfp && hc < hfp + hpulse) ? 0:1;
-    assign vsync = (vc >= vfp && vc < vfp + vpulse) ? 0:1;
-    assign activevideo = (hc >= blackH && vc >= blackV) ? 1:0;
+    // Generate horizontal and vertical sync pulses (active low) and active video.
+    assign hsync = (hc >= hfp && hc < hfp + hpulse) ? 1'b0 : 1'b1;
+    assign vsync = (vc >= vfp && vc < vfp + vpulse) ? 1'b0 : 1'b1;
+    assign activevideo = (hc >= blackH) && (vc >= blackV) ? 1'b1 : 1'b0; //&& (hc < blackH + activeHvideo) && (vc < blackV + activeVvideo) ? 1'b1 : 1'b0;
+//    assign endframe = (hc == hpixels-1 && vc == vlines-1) ? 1'b1 : 1'b0 ;
 
-    // Generate color.
-    always @(posedge px_clk)
+    // Generate new pixel position.
+    always @(*)
     begin
         // First check if we are within vertical active video range.
         if (activevideo)
@@ -136,10 +179,11 @@ module VgaSyncGen (
             y_px <= vc - blackV;
         end
         else
-        // We are outside active video range so display black.
+        // We are outside active video range so initial position it's ok.
         begin
             x_px <= 0;
             y_px <= 0;
         end
      end
- endmodule
+
+endmodule
