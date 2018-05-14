@@ -311,7 +311,7 @@
           "id": "f8a4d92e-2664-4d78-bc27-614710107b80",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsCheckerBoard.v\r\n\r\n\r\n//-- Instantiate PxsCheckerBoard module.\r\nPxsCheckerBoard \r\nPxsCheckerBoard1(\r\n    px_clk,           // pixel clock\r\n    VGA_Str_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo\r\n    VGA_RGB_Str_o\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n    );\r\n\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsCheckerBoard.v\r\n\r\n\r\n//-- Instantiate PxsCheckerBoard module.\r\nPxsCheckerBoard \r\nPxsCheckerBoard1(\r\n    px_clk,           // pixel clock\r\n    VGA_Str_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo\r\n    VGA_RGB_Str_o\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n    );\r\n\r\n",
             "params": [],
             "ports": {
               "in": [
@@ -380,10 +380,10 @@
     },
     "state": {
       "pan": {
-        "x": -171.7143,
-        "y": 277.0714
+        "x": -173.2338,
+        "y": 286.0325
       },
-      "zoom": 0.6786
+      "zoom": 0.6834
     }
   },
   "dependencies": {}

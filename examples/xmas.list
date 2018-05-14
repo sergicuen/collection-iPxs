@@ -1,0 +1,295 @@
+// 0 fondo
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+// 1 cuerpo
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+
+// 2 copo_peq
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 0 F 0 0 0 0 0 0 0 
+0 0 0 0 0 0 F F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 F F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 0 F 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+// 3 copo_peq2
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 0 F 0 0 0 0 0 0 0 
+0 0 0 0 0 0 F F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 F F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 0 F 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 F 0 0 F 0 0 0 
+0 0 0 0 0 0 0 0 0 0 F F 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 F F 0 0 0 0 
+0 0 0 0 0 0 0 0 0 F 0 0 F 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+// 4 estrella
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 F 0 0 F 0 0 F 0 0 0 0 0 
+0 0 0 0 0 F 0 F 0 F 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F 0 0 0 0 0 0 0 
+0 F F F F F F F F F F F F F 0 0 
+0 0 0 0 0 0 F F F 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 F 0 F 0 0 0 0 0 0 
+0 0 0 0 F 0 0 F 0 0 F 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+// 5 estrella 2
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 0 0 F 0 0 0 0 0 0 
+0 F F F F F 0 F 0 F F F F F 0 0 
+0 0 0 0 0 F 0 0 0 F 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+// 6 estrella
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 F 0 0 0 F 0 0 0 F 0 0 0 0 
+0 0 0 0 F 0 F F F 0 F 0 0 0 0 0 
+0 0 0 0 0 F F F F F 0 0 0 0 0 0 
+0 F F F F F F F F F F F F F 0 0 
+0 0 0 0 0 F F F F F 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F 0 0 0 0 0 0 0 
+0 0 0 0 0 F 0 F 0 F 0 0 0 0 0 0 
+0 0 0 0 F 0 0 F 0 0 F 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 F 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+
+
+// 7 piso
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+
+// 8 pisotronco
+0 0 0 0 0 0 F F F F 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F F 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F F 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F F F 0 0 0 0 0 
+0 0 0 0 0 0 F F F F F F 0 0 0 0 
+0 0 0 0 F F F F F F F F F 0 0 0 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+
+// 9 pinobajoizq.bmp
+0 0 0 0 0 0 0 0 0 0 0 0 F F F F 
+0 0 0 0 0 0 0 0 0 0 0 0 F F F F 
+0 0 0 0 0 0 0 0 0 F F F F F F F 
+0 0 0 0 0 0 0 0 F F F F F F F F 
+0 0 0 0 0 0 F F F F F F F F F F 
+0 0 0 0 0 F F F F F F F F F F F 
+0 0 0 F F F F F F F F F F F F F 
+0 F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+0 0 F F F F F F F F F F F F F F 
+0 0 0 0 F F F F F F F F F F F F 
+0 0 0 0 0 0 0 F F F F F F F F F 
+0 0 0 0 0 0 0 0 0 0 0 F F F F F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+//  10 pinoinferiordecha.bmp
+F F F F 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F F F F 0 0 0 0 0 0 0 0 0 
+F F F F F F F F 0 0 0 0 0 0 0 0 
+F F F F F F F F F F 0 0 0 0 0 0 
+F F F F F F F F F F F 0 0 0 0 0 
+F F F F F F F F F F F F F 0 0 0 
+F F F F F F F F F F F F F F F 0 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F 0 0 
+F F F F F F F F F F F F 0 0 0 0 
+F F F F F F F F F 0 0 0 0 0 0 0 
+F F F F F 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+// 11 pinocentroizq.bmp
+0 0 0 0 0 0 0 0 0 0 0 0 F F F F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 F F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 F F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 F F F 
+0 0 0 0 0 0 0 0 0 0 0 0 F F F F 
+0 0 0 0 0 0 0 0 0 0 0 F F F F F 
+0 0 0 0 0 0 0 0 0 F F F F F F F 
+0 0 0 0 0 0 0 0 F F F F F F F F 
+0 0 0 0 0 0 0 F F F F F F F F F 
+0 0 0 0 0 0 F F F F F F F F F F 
+0 0 0 0 0 0 F F F F F F F F F F 
+0 0 0 0 0 0 0 F F F F F F F F F 
+0 0 0 0 0 0 0 0 0 F F F F F F F 
+0 0 0 0 0 0 0 0 0 0 0 0 F F F F 
+
+// 12 pinocentrodecha.bmp
+F F F F 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F F 0 0 0 0 0 0 0 0 0 0 0 
+F F F F F F 0 0 0 0 0 0 0 0 0 0 
+F F F F F F F 0 0 0 0 0 0 0 0 0 
+F F F F F F F F 0 0 0 0 0 0 0 0 
+F F F F F F F F F 0 0 0 0 0 0 0 
+F F F F F F F F F F 0 0 0 0 0 0 
+F F F F F F F F F F 0 0 0 0 0 0 
+F F F F F F F F F 0 0 0 0 0 0 0 
+F F F F F F F 0 0 0 0 0 0 0 0 0 
+F F F F 0 0 0 0 0 0 0 0 0 0 0 0 
+
+// 13 pinosupcentro.bmp
+0 0 0 0 0 0 0 F F 0 0 0 0 0 0 0 
+0 0 0 0 0 0 F F F F 0 0 0 0 0 0 
+0 0 0 0 0 F F F F F F 0 0 0 0 0 
+0 0 0 0 0 F F F F F F 0 0 0 0 0 
+0 0 0 0 F F F F F F F F 0 0 0 0 
+0 0 0 0 F F F F F F F F 0 0 0 0 
+0 0 0 F F F F F F F F F F 0 0 0 
+0 0 0 F F F F F F F F F F 0 0 0 
+0 0 F F F F F F F F F F F F 0 0 
+0 F F F F F F F F F F F F F F 0 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+F F F F F F F F F F F F F F F F 
+
+// 14 pinosupizq.bmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 F 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 F F 
+0 0 0 0 0 0 0 0 0 0 0 0 F F F F 
+0 0 0 0 0 0 0 0 0 0 0 F F F F F 
+0 0 0 0 0 0 0 0 0 0 0 F F F F F 
+
+// 15 pinosupdecha.bmp
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F 0 0 0 0 0 0 0 0 0 0 0 0 
+F F F F F 0 0 0 0 0 0 0 0 0 0 0 
+F F F F F 0 0 0 0 0 0 0 0 0 0 0 
+
+
+
+
+
+ 

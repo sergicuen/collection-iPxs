@@ -3,7 +3,7 @@
   "package": {
     "name": "PxsMux2",
     "version": "1.0",
-    "description": "Mux for streams",
+    "description": "Mux2",
     "author": "Sergio Cuenca",
     "image": ""
   },
@@ -492,7 +492,7 @@
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsMux2.v\r\n\r\n\r\n//-- Instantiate PxsMux2 module.\r\nPxsMux2 \r\nPxsMux21(\r\n    px_clk,\r\n    RGBStr1_i,\r\n    RGBStr2_i,\r\n    control,\r\n    RGBStr_o\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsMux2.v\r\n\r\n\r\n//-- Instantiate PxsMux2 module.\r\nPxsMux2 \r\nPxsMux21(\r\n    px_clk,\r\n    RGBStr1_i,\r\n    RGBStr2_i,\r\n    control,\r\n    RGBStr_o\r\n    );\r\n",
             "params": [],
             "ports": {
               "in": [

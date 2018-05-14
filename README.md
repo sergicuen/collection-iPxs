@@ -11,40 +11,69 @@ Icestudio PiXel Stream collection.
 * Install the collection: *Tools > Collections > Add*
 * Load the collection: *Select > Collection*
 
+## Tutorial (spanish)
+
+https://github.com/sergicuen/collection-iPxs/wiki
+
 ## Blocks
 * *Flow*
   * PxsMux2
   * PxsSplit2
 * *Overlay*
   * PxsBall
+  * PxsBouncingBall
+  * PxsBouncingGSprite
   * PxsBouncingLogo
+  * PxsBouncingSprite
+  * PxsCursor
+  * PxsDigit
   * PxsGridOverlay
-  * PxsXorPattern
-  * image
+  * PxsLogoPattern
+  * PxsPoPSprite
+  * PxsScoreOverlay
+  * PxsScoreOverlayLite
+  * PxsScoreOverlayLiteParam
 * *Utils*
   * PxsStrComp
   * PxsStrJoin
   * PxsStrVGAJoin
   * PxsVGAComp
+  * PxsVGAEndframe
 * *Videogen*
   * PxsCheckerBoard
+  * PxsColorBarsPattern
   * PxsConstant
+  * PxsRGB
+  * PxsStrVGAJoin
   * PxsSyncGen
   * PxsXorPattern
+  * VgaSyncGen
 
 ## Examples
+* BouncingBallSprites
+* BouncingGBallSprites
+* ColorBarsStream
+* ControlMux2Logos
+* ControlMux2Stream
+* FrontonGame_Score
+* LogoOverlay
+* LogoPattern
 * Mux2ConstStream
+* Mux2ConstStreamCursor
 * Mux2Logo
 * Mux2Stream
+* PoPSequence
+* SpriteGame101
+* VideoGame101
+* XmasFPGA
 * XorBallOverlay
 * XorGridBallOverlay
 * XorGridOverlay
-* XorOverlay
+* XorPattern
 
 
 ## Authors
-* Sergio Cuenca
-https://github.com/sergicuen
+* [Sergio Cuenca](https://github.com/sergicuen)
 
 
 ## License

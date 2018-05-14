@@ -471,7 +471,7 @@
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsSplit2.v\r\n\r\n\r\n//-- Instantiate PxsSplit2 module.\r\nPxsSplit2 \r\nPxsSplit21(\r\n    px_clk,\r\n    RGBStr_i,\r\n    RGBStr1_o,\r\n    RGBStr2_o\r\n    );\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsSplit2.v\r\n\r\n\r\n//-- Instantiate PxsSplit2 module.\r\nPxsSplit2 \r\nPxsSplit21(\r\n    px_clk,\r\n    RGBStr_i,\r\n    RGBStr1_o,\r\n    RGBStr2_o\r\n    );\r\n",
             "params": [],
             "ports": {
               "in": [

@@ -3,9 +3,9 @@
   "package": {
     "name": "PxsRGB",
     "version": "1.0",
-    "description": "generate one stream of constant RGB color",
+    "description": "generate a stream of constant RGB color",
     "author": "Sergio Cuenca",
-    "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20width=%22275%22%20height=%22231%22%20viewBox=%220%200%20275%20231%22%20preserveAspectRatio=%22none%22%3E%3Cimage%20width=%22275%22%20height=%22231%22%20xlink:href=%22data:image/jpg;base64,%20/9j/4AAQSkZJRgABAQEAkACQAAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/%202wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwM%20BwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM%20DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCADnARMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEA%20AAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJx%20FDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNk%20ZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJ%20ytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF%20BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMz%20UvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3%20eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna%204uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDz3/huT41/9Fg+KX/hV3//AMdo/wCG5PjX%20/wBFg+KX/hV3/wD8dry2ivwv63X/AJ397P8AYb/VvKP+gWn/AOAR/wAj1L/huT41/wDRYPil/wCF%20Xf8A/wAdo/4bk+Nf/RYPil/4Vd//APHa8too+t1/5397D/VvKP8AoFp/+AR/yPUv+G5PjX/0WD4p%20f+FXf/8Ax2j/AIbk+Nf/AEWD4pf+FXf/APx2vLaKPrdf+d/ew/1byj/oFp/+AR/yPUv+G5PjX/0W%20D4pf+FXf/wDx2j/huT41/wDRYPil/wCFXf8A/wAdry2ij63X/nf3sP8AVvKP+gWn/wCAR/yPUv8A%20huT41/8ARYPil/4Vd/8A/HaP+G5PjX/0WD4pf+FXf/8Ax2vLaKPrdf8Anf3sP9W8o/6Baf8A4BH/%20ACPUv+G5PjX/ANFg+KX/AIVd/wD/AB2j/huT41/9Fg+KX/hV3/8A8dry2ij63X/nf3sP9W8o/wCg%20Wn/4BH/I9S/4bk+Nf/RYPil/4Vd//wDHaP8AhuT41/8ARYPil/4Vd/8A/Ha8too+t1/5397D/VvK%20P+gWn/4BH/I9S/4bk+Nf/RYPil/4Vd//APHaP+G5PjX/ANFg+KX/AIVd/wD/AB2vLaKPrdf+d/ew%20/wBW8o/6Baf/AIBH/I9S/wCG5PjX/wBFg+KX/hV3/wD8do/4bk+Nf/RYPil/4Vd//wDHa8too+t1%20/wCd/ew/1byj/oFp/wDgEf8AI9S/4bk+Nf8A0WD4pf8AhV3/AP8AHaP+G5PjX/0WD4pf+FXf/wDx%202vLaKPrdf+d/ew/1byj/AKBaf/gEf8j1L/huT41/9Fg+KX/hV3//AMdo/wCG5PjX/wBFg+KX/hV3%20/wD8dry2ij63X/nf3sP9W8o/6Baf/gEf8j1L/huT41/9Fg+KX/hV3/8A8do/4bk+Nf8A0WD4pf8A%20hV3/AP8AHa8too+t1/5397D/AFbyj/oFp/8AgEf8j1L/AIbk+Nf/AEWD4pf+FXf/APx2j/huT41/%209Fg+KX/hV3//AMdry2ij63X/AJ397D/VvKP+gWn/AOAR/wAj1L/huT41/wDRYPil/wCFXf8A/wAd%20o/4bk+Nf/RYPil/4Vd//APHa8too+t1/5397D/VvKP8AoFp/+AR/yPUv+G5PjX/0WD4pf+FXf/8A%20x2j/AIbk+Nf/AEWD4pf+FXf/APx2vLaKPrdf+d/ew/1byj/oFp/+AR/yPUv+G5PjX/0WD4pf+FXf%20/wDx2j/huT41/wDRYPil/wCFXf8A/wAdry2ij63X/nf3sP8AVvKP+gWn/wCAR/yPUv8AhuT41/8A%20RYPil/4Vd/8A/HaP+G5PjX/0WD4pf+FXf/8Ax2vLaKPrdf8Anf3sP9W8o/6Baf8A4BH/ACPUv+G5%20PjX/ANFg+KX/AIVd/wD/AB2ivLaKPrdf+d/ew/1byj/oFp/+AR/yCiiiuc9oKKKKACiiigAooooA%20KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo%20oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii%20igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK%20ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA%20KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo%20oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii%20igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK%20ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA%20KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo%20oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii%20igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK%20ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA%20KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo%20oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii%20igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK%20ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA%20KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo%20oooAKKKKACiiigAooooAKKKKACiiigD/2Q==%22/%3E%3C/svg%3E"
+    "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22210mm%22%20height=%22297mm%22%20viewBox=%220%200%20210%20297%22%3E%3Cg%20font-weight=%22400%22%20font-family=%22sans-serif%22%20letter-spacing=%220%22%20word-spacing=%220%22%3E%3Ctext%20style=%22line-height:1.25%22%20x=%2217.886%22%20y=%22129.252%22%20transform=%22scale(1.08086%20.92519)%22%20font-size=%2282.959%22%20fill=%22green%22%20stroke-width=%222.074%22%3E%3Ctspan%20x=%2217.886%22%20y=%22129.252%22%20fill=%22red%22%3ER%3C/tspan%3E%3C/text%3E%3Ctext%20style=%22line-height:1.25%22%20x=%2289.093%22%20y=%22116.229%22%20transform=%22scale(.81788%201.22267)%22%20font-size=%22107.755%22%20fill=%22#0f0%22%20stroke-width=%222.694%22%3E%3Ctspan%20x=%2289.093%22%20y=%22116.229%22%3EG%3C/tspan%3E%3C/text%3E%3Ctext%20style=%22line-height:1.25%22%20x=%22137.376%22%20y=%22116.873%22%20transform=%22matrix(.96475%20.00849%20-.0079%201.03647%200%200)%22%20font-size=%2278.405%22%20fill=%22#00f%22%20stroke-width=%221.96%22%3E%3Ctspan%20x=%22137.376%22%20y=%22116.873%22%3EB%3C/tspan%3E%3C/text%3E%3C/g%3E%3C/svg%3E"
   },
   "design": {
     "board": "icezum",
@@ -308,11 +308,28 @@
           }
         },
         {
+          "id": "4ef4f2b1-023d-4569-8e10-643ef6cc71cb",
+          "type": "basic.constant",
+          "data": {
+            "name": "COLORext",
+            "value": "3'b111",
+            "local": false
+          },
+          "position": {
+            "x": 2032,
+            "y": -416
+          }
+        },
+        {
           "id": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
           "type": "basic.code",
           "data": {
-            "code": "// @include PxsConstant.v\r\n\r\n\r\n//-- Instantiate PxsConstant module.\r\nPxsConstant\r\nPxsConstant1(\r\n    px_clk,\r\n    VGAStr_i,\r\n    RGBStr_o\r\n    );\r\n",
-            "params": [],
+            "code": "// @include Pxs.vh\r\n// @include PxsConstant.v\r\n\r\n\r\n//-- Instantiate PxsConstant module.\r\nPxsConstant #(COLORext)\r\nPxsConstant1(\r\n    px_clk,\r\n    VGAStr_i,\r\n    RGBStr_o\r\n    );\r\n",
+            "params": [
+              {
+                "name": "COLORext"
+              }
+            ],
             "ports": {
               "in": [
                 {
@@ -363,6 +380,12 @@
             "block": "10563024-bd0a-4a4d-856c-4bb1dff3f104",
             "port": "in"
           },
+          "vertices": [
+            {
+              "x": 2416,
+              "y": -80
+            }
+          ],
           "size": 26
         },
         {
@@ -375,15 +398,25 @@
             "port": "VGAStr_i"
           },
           "size": 23
+        },
+        {
+          "source": {
+            "block": "4ef4f2b1-023d-4569-8e10-643ef6cc71cb",
+            "port": "constant-out"
+          },
+          "target": {
+            "block": "fabbd2ae-d75a-443d-9b7e-b8205b86adb7",
+            "port": "COLORext"
+          }
         }
       ]
     },
     "state": {
       "pan": {
-        "x": -1182.3333,
-        "y": 345.8333
+        "x": -1191.1061,
+        "y": 403.1288
       },
-      "zoom": 0.7917
+      "zoom": 0.7973
     }
   },
   "dependencies": {}
