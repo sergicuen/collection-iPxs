@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Thu May 31 17:45:18 2018
+[*]
+[dumpfile] "/home/matt/work/fpga/collection-iPxs/test/VgaSyncGen/test.vcd"
+[dumpfile_mtime] "Thu May 31 17:44:20 2018"
+[dumpfile_size] 1287560
+[savefile] "/home/matt/work/fpga/collection-iPxs/test/VgaSyncGen/test.gtkw"
+[timestart] 66568
+[size] 1815 950
+[pos] 378 0
+*-5.927323 66944 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_tb.
+[sst_width] 253
+[signals_width] 235
+[sst_expanded] 1
+[sst_vpaned_height] 280
+@28
+top_tb.dut.clk
+top_tb.dut.px_clk
+top_tb.dut.activevideo
+top_tb.dut.hsync
+top_tb.dut.vsync
+@24
+top_tb.dut.hc[9:0]
+top_tb.dut.vc[9:0]
+top_tb.dut.x_px[9:0]
+@25
+top_tb.dut.y_px[9:0]
+[pattern_trace] 1
+[pattern_trace] 0
