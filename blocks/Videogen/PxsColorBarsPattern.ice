@@ -27,7 +27,7 @@
             "clock": false
           },
           "position": {
-            "x": 376,
+            "x": 320,
             "y": -120
           }
         },
@@ -35,7 +35,7 @@
           "id": "26bc0fc1-b0e9-4536-a965-513e91e18ed9",
           "type": "basic.output",
           "data": {
-            "name": "RGBStr",
+            "name": "RGBStr_o",
             "range": "[25:0]",
             "pins": [
               {
@@ -180,7 +180,7 @@
           "id": "088561f6-f085-4bbd-b6e0-a355517996c5",
           "type": "basic.input",
           "data": {
-            "name": "VGAStr",
+            "name": "VGAStr_i",
             "range": "[22:0]",
             "pins": [
               {
@@ -311,7 +311,7 @@
           "id": "f8a4d92e-2664-4d78-bc27-614710107b80",
           "type": "basic.code",
           "data": {
-            "code": "// @include Pxs.vh\r\n// @include PxsColorBarsPattern.v\r\n\r\n\r\n//-- Instantiate PxsColorBarsPattern module.\r\nPxsColorBarsPattern \r\nPxsColorBarsPattern1(\r\n    px_clk,           // pixel clock\r\n    VGAStr_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo\r\n    RGBStr_o\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n    );\r\n\r\n",
+            "code": "// @include Pxs.vh\r\n// @include PxsColorBarsPattern.v\r\n\r\n//-- Instantiate PxsColorBarsPattern module.\r\nPxsColorBarsPattern \r\nPxsColorBarsPattern1\r\n(\r\n    px_clk,     // Pixel clock\r\n    VGAStr_i,\t// HSync, VSync, XCoord, YCoord, ActiveVideo\r\n    RGBStr_o\t// HSync, VSync, XCoord, YCoord, ActiveVideo, RGB(1:1:1)\r\n);\r\n",
             "params": [],
             "ports": {
               "in": [
@@ -338,7 +338,7 @@
             "y": -192
           },
           "size": {
-            "width": 720,
+            "width": 688,
             "height": 400
           }
         }
@@ -380,10 +380,10 @@
     },
     "state": {
       "pan": {
-        "x": -182.3506,
-        "y": 285.7987
+        "x": -171.7143,
+        "y": 277.0714
       },
-      "zoom": 0.7127
+      "zoom": 0.6786
     }
   },
   "dependencies": {}

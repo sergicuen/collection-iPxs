@@ -28,16 +28,16 @@
 // `endif
 
 // Stream components
-`define Active 0:0 		// ActiveVideo
-`define VS 1:1			// VSync
-`define HS 2:2			// HSync
-`define YC 12:3			// Y Coordinate
-`define XC 22:13		// X Coordinate
-`define VGA 22:0		// VGA components
+`define Active 0:0      // ActiveVideo
+`define VS 1:1          // VSync
+`define HS 2:2          // HSync
+`define YC 12:3         // Y Coordinate
+`define XC 22:13        // X Coordinate
+`define VGA 22:0        // VGA components
 
 `ifdef RGB111
-`define RGB 25:23		// Pixel RGB (1:1:1)
-`define B 23:23			
+`define RGB 25:23       // Pixel RGB (1:1:1)
+`define B 23:23
 `define G 24:24
 `define R 25:25
 `endif
@@ -46,7 +46,7 @@
 // `define blue  = 3'b001;
 // `define green = 3'b010;
 // `define white = 3'b111;
-// `define pink = 3'b101;	
+// `define pink = 3'b101;
 
 
 `endif //_Pxs_vh_
